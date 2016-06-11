@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z0T-1R-esV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -69,6 +69,9 @@
                                                 <include reference="GKb-v5-WH1"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="confirmTouch:" destination="BYZ-38-t0r" eventType="touchDragInside" id="cvl-sW-AUd"/>
+                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ghost" translatesAutoresizingMaskIntoConstraints="NO" id="4Hi-kC-5pu">
                                         <rect key="frame" x="0.0" y="-20" width="17" height="20"/>
@@ -249,10 +252,71 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="E5y-NQ-2DW" id="YPF-vf-zof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="447" y="437"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1xn-wo-YNV">
+            <objects>
+                <viewController id="iPo-7R-b3x" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wcf-Og-wFs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ORt-dK-Ngd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1gV-rU-Kdd">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nul-ar-aY4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="85" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yF8-rj-Abl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nul-ar-aY4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nul-ar-aY4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="7kS-I3-Yrb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nY9-tC-ama" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365" y="1101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gEB-am-NyF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z0T-1R-esV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tb7-N9-uhj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iPo-7R-b3x" kind="relationship" relationship="rootViewController" id="K8l-TT-Ab1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0I-VC-KjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="1101"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,8 @@
 		3D65BF4D1D0BC7C700813255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D65BF4B1D0BC7C700813255 /* LaunchScreen.storyboard */; };
 		3D65BF581D0BC7C800813255 /* todoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF571D0BC7C800813255 /* todoTests.m */; };
 		3D65BF631D0BC7C800813255 /* todoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF621D0BC7C800813255 /* todoUITests.m */; };
+		3D65BF731D0BFEBA00813255 /* PATodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF721D0BFEBA00813255 /* PATodo.m */; };
+		3D65BF751D0BFEFF00813255 /* PATodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF741D0BFEFF00813255 /* PATodoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		3D65BF5E1D0BC7C800813255 /* todoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D65BF621D0BC7C800813255 /* todoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = todoUITests.m; sourceTree = "<group>"; };
 		3D65BF641D0BC7C800813255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D65BF711D0BFEBA00813255 /* PATodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATodo.h; sourceTree = "<group>"; };
+		3D65BF721D0BFEBA00813255 /* PATodo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATodo.m; sourceTree = "<group>"; };
+		3D65BF741D0BFEFF00813255 /* PATodoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATodoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		3D65BF3C1D0BC7C700813255 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				3D65BF701D0BFE2100813255 /* Model */,
 				3D65BF401D0BC7C700813255 /* AppDelegate.h */,
 				3D65BF411D0BC7C700813255 /* AppDelegate.m */,
 				3D65BF431D0BC7C700813255 /* ViewController.h */,
@@ -127,6 +133,7 @@
 			children = (
 				3D65BF571D0BC7C800813255 /* todoTests.m */,
 				3D65BF591D0BC7C800813255 /* Info.plist */,
+				3D65BF741D0BFEFF00813255 /* PATodoTests.m */,
 			);
 			path = todoTests;
 			sourceTree = "<group>";
@@ -138,6 +145,15 @@
 				3D65BF641D0BC7C800813255 /* Info.plist */,
 			);
 			path = todoUITests;
+			sourceTree = "<group>";
+		};
+		3D65BF701D0BFE2100813255 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D65BF711D0BFEBA00813255 /* PATodo.h */,
+				3D65BF721D0BFEBA00813255 /* PATodo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +288,7 @@
 			files = (
 				3D65BF451D0BC7C700813255 /* ViewController.m in Sources */,
 				3D65BF421D0BC7C700813255 /* AppDelegate.m in Sources */,
+				3D65BF731D0BFEBA00813255 /* PATodo.m in Sources */,
 				3D65BF3F1D0BC7C700813255 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D65BF751D0BFEFF00813255 /* PATodoTests.m in Sources */,
 				3D65BF581D0BC7C800813255 /* todoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

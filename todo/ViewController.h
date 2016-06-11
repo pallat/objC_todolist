@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+- (IBAction)confirmTouch:(id)sender;
 
 @end
 
