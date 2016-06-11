@@ -6,7 +6,11 @@
 //  Copyright © 2559 Cadet. All rights reserved.
 //
 
+// Controller
 #import "PATodoListViewController.h"
+#import "PADetailViewController.h"
+
+// Model
 #import "PATodo.h"
 
 @interface PATodoListViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -34,6 +38,11 @@
     // Do any additional setup after loading the view.
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,11 +82,19 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+
+
     PATodo *todo = self.todoList[indexPath.row];
-    [todo toggleDone];
+
     
-    [self.tableView reloadData];
+    PADetailViewController *detailVC = [[PADetailViewController alloc] initWithNibName:@"PADetailViewController" bundle:nil];
+    
+    detailVC.todo = todo;
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+    detailVC.title = @"Detail";
+    
+
 }
 
 

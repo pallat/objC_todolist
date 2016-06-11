@@ -18,6 +18,8 @@
 		3D65BF731D0BFEBA00813255 /* PATodo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF721D0BFEBA00813255 /* PATodo.m */; };
 		3D65BF751D0BFEFF00813255 /* PATodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF741D0BFEFF00813255 /* PATodoTests.m */; };
 		3D65BF791D0C0CE500813255 /* PATodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF781D0C0CE500813255 /* PATodoListViewController.m */; };
+		3D65BF7D1D0C178200813255 /* PADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF7B1D0C178200813255 /* PADetailViewController.m */; };
+		3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D65BF7C1D0C178200813255 /* PADetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		3D65BF741D0BFEFF00813255 /* PATodoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATodoTests.m; sourceTree = "<group>"; };
 		3D65BF771D0C0CE500813255 /* PATodoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATodoListViewController.h; sourceTree = "<group>"; };
 		3D65BF781D0C0CE500813255 /* PATodoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATodoListViewController.m; sourceTree = "<group>"; };
+		3D65BF7A1D0C178200813255 /* PADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADetailViewController.h; sourceTree = "<group>"; };
+		3D65BF7B1D0C178200813255 /* PADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADetailViewController.m; sourceTree = "<group>"; };
+		3D65BF7C1D0C178200813255 /* PADetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PADetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +170,9 @@
 			children = (
 				3D65BF771D0C0CE500813255 /* PATodoListViewController.h */,
 				3D65BF781D0C0CE500813255 /* PATodoListViewController.m */,
+				3D65BF7A1D0C178200813255 /* PADetailViewController.h */,
+				3D65BF7B1D0C178200813255 /* PADetailViewController.m */,
+				3D65BF7C1D0C178200813255 /* PADetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +282,7 @@
 			files = (
 				3D65BF4D1D0BC7C700813255 /* LaunchScreen.storyboard in Resources */,
 				3D65BF4A1D0BC7C700813255 /* Assets.xcassets in Resources */,
+				3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */,
 				3D65BF481D0BC7C700813255 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +310,7 @@
 			files = (
 				3D65BF451D0BC7C700813255 /* ViewController.m in Sources */,
 				3D65BF421D0BC7C700813255 /* AppDelegate.m in Sources */,
+				3D65BF7D1D0C178200813255 /* PADetailViewController.m in Sources */,
 				3D65BF731D0BFEBA00813255 /* PATodo.m in Sources */,
 				3D65BF3F1D0BC7C700813255 /* main.m in Sources */,
 				3D65BF791D0C0CE500813255 /* PATodoListViewController.m in Sources */,
