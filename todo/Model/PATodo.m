@@ -17,6 +17,6 @@
     return self;
 }
 - (void) toggleDone {
-    _done = true;
+    _done = !_done;
 }
 @end
