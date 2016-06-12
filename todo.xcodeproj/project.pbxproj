@@ -22,6 +22,7 @@
 		3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D65BF7C1D0C178200813255 /* PADetailViewController.xib */; };
 		3D8D7B891D0D17D70002F08F /* PAComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D7B871D0D17D70002F08F /* PAComposerViewController.m */; };
 		3D8D7B8A1D0D17D70002F08F /* PAComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D7B881D0D17D70002F08F /* PAComposerViewController.xib */; };
+		3D8D7B8C1D0D41930002F08F /* File in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D7B8B1D0D41930002F08F /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3D8D7B861D0D17D70002F08F /* PAComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAComposerViewController.h; sourceTree = "<group>"; };
 		3D8D7B871D0D17D70002F08F /* PAComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAComposerViewController.m; sourceTree = "<group>"; };
 		3D8D7B881D0D17D70002F08F /* PAComposerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAComposerViewController.xib; sourceTree = "<group>"; };
+		3D8D7B8B1D0D41930002F08F /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		3D65BF311D0BC7C700813255 = {
 			isa = PBXGroup;
 			children = (
+				3D8D7B8B1D0D41930002F08F /* File */,
 				3D65BF3C1D0BC7C700813255 /* todo */,
 				3D65BF561D0BC7C800813255 /* todoTests */,
 				3D65BF611D0BC7C800813255 /* todoUITests */,
@@ -290,6 +293,7 @@
 			files = (
 				3D65BF4D1D0BC7C700813255 /* LaunchScreen.storyboard in Resources */,
 				3D65BF4A1D0BC7C700813255 /* Assets.xcassets in Resources */,
+				3D8D7B8C1D0D41930002F08F /* File in Resources */,
 				3D8D7B8A1D0D17D70002F08F /* PAComposerViewController.xib in Resources */,
 				3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */,
 				3D65BF481D0BC7C700813255 /* Main.storyboard in Resources */,

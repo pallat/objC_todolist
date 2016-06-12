@@ -21,6 +21,9 @@
     [super viewDidLoad];
     self.title = @"Create";
     [self.titleText becomeFirstResponder];
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelBarButtonClicked:)];
+    [self.navigationItem setLeftBarButtonItem:cancelButton];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -43,6 +46,10 @@
 
     [self.delegate composer:self didCreateTodo:todo];
     
+}
+
+- (void) cancelBarButtonClicked:(id) sender {
+    [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

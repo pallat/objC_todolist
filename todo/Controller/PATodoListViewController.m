@@ -14,7 +14,7 @@
 // Model
 #import "PATodo.h"
 
-@interface PATodoListViewController () <UITableViewDataSource, UITableViewDelegate, PAComposerDelegate>
+@interface PATodoListViewController () <UITableViewDataSource, UITableViewDelegate, PAComposerDelegate, PADetailDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *todoList;
@@ -93,6 +93,7 @@
     PADetailViewController *detailVC = [[PADetailViewController alloc] initWithNibName:@"PADetailViewController" bundle:nil];
     
     detailVC.todo = todo;
+    detailVC.delegate = self;
     
     [self.navigationController pushViewController:detailVC animated:YES];
 }
@@ -113,6 +114,13 @@
     [self.todoList addObject:todo];
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - PADetailDelegate
+- (void) detailView:(PADetailViewController *)detailVC didDeleteTodo:(PATodo *)todo {
+    [self.todoList removeObject:todo];
+    [self.tableView reloadData];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

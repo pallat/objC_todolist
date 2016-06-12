@@ -8,11 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@class PATodo;
+@class PADetailViewController, PATodo;
+
+@protocol PADetailDelegate <NSObject>
+
+- (void)detailView: (PADetailViewController *) detailVC didDeleteTodo: (PATodo *) todo;
+
+@end
 
 @interface PADetailViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *toggleSwitch;
 @property (weak, nonatomic) PATodo *todo;
+@property (weak, nonatomic) id<PADetailDelegate> delegate;
 
 @end
