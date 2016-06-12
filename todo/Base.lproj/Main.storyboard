@@ -111,16 +111,16 @@
                                         <exclude reference="brh-jH-wYo"/>
                                         <exclude reference="621-4i-rOP"/>
                                         <exclude reference="tyy-LT-23i"/>
+                                        <exclude reference="gsH-mB-Q2P"/>
                                         <exclude reference="PGf-oL-NeW"/>
                                         <exclude reference="dKe-1a-Gn0"/>
                                         <exclude reference="CZO-up-kLF"/>
                                         <exclude reference="P61-Rr-PiW"/>
-                                        <exclude reference="Awa-Rx-Sse"/>
-                                        <exclude reference="EUn-bv-QVW"/>
-                                        <exclude reference="gsH-mB-Q2P"/>
                                         <exclude reference="249-Wg-cgs"/>
                                         <exclude reference="9zQ-pw-KdB"/>
                                         <exclude reference="fOR-2m-WzG"/>
+                                        <exclude reference="Awa-Rx-Sse"/>
+                                        <exclude reference="EUn-bv-QVW"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -138,16 +138,16 @@
                                         <include reference="brh-jH-wYo"/>
                                         <include reference="621-4i-rOP"/>
                                         <include reference="tyy-LT-23i"/>
+                                        <include reference="gsH-mB-Q2P"/>
                                         <include reference="PGf-oL-NeW"/>
                                         <include reference="dKe-1a-Gn0"/>
                                         <include reference="CZO-up-kLF"/>
                                         <include reference="P61-Rr-PiW"/>
-                                        <include reference="Awa-Rx-Sse"/>
-                                        <include reference="EUn-bv-QVW"/>
-                                        <include reference="gsH-mB-Q2P"/>
                                         <include reference="249-Wg-cgs"/>
                                         <include reference="9zQ-pw-KdB"/>
                                         <include reference="fOR-2m-WzG"/>
+                                        <include reference="Awa-Rx-Sse"/>
+                                        <include reference="EUn-bv-QVW"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -161,8 +161,7 @@
                                         <exclude reference="ZQf-qV-ksq"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="535" width="400" height="65"/>
+                                <variation key="widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="ZQf-qV-ksq"/>
                                     </mask>
@@ -171,9 +170,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrP-BD-tpX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Next"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="348" y="553" width="32" height="30"/>
-                                </variation>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="dots" translatesAutoresizingMaskIntoConstraints="NO" id="cAB-G4-Dsm">
                                 <rect key="frame" x="0.0" y="-11" width="65" height="11"/>
@@ -183,9 +179,6 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="553" width="48" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -214,18 +207,18 @@
                                 <exclude reference="4c1-mq-w1a"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="9ho-c3-rkE"/>
-                                <exclude reference="HjK-wf-I9m"/>
-                                <exclude reference="nej-U2-pR9"/>
-                                <exclude reference="7Za-FX-VJW"/>
-                                <exclude reference="Rj3-14-ayU"/>
-                                <exclude reference="Eva-cc-DFN"/>
                                 <exclude reference="Xpc-Pu-aZs"/>
                                 <exclude reference="kRf-tJ-8SR"/>
                                 <exclude reference="3yy-9d-Rt2"/>
                                 <exclude reference="IYJ-eJ-gUh"/>
+                                <exclude reference="7Za-FX-VJW"/>
+                                <exclude reference="Rj3-14-ayU"/>
+                                <exclude reference="Eva-cc-DFN"/>
                                 <exclude reference="IhA-ap-8gJ"/>
                                 <exclude reference="woR-LZ-n3k"/>
+                                <exclude reference="9ho-c3-rkE"/>
+                                <exclude reference="HjK-wf-I9m"/>
+                                <exclude reference="nej-U2-pR9"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -237,18 +230,18 @@
                                 <include reference="4c1-mq-w1a"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9ho-c3-rkE"/>
-                                <include reference="HjK-wf-I9m"/>
-                                <include reference="nej-U2-pR9"/>
-                                <include reference="7Za-FX-VJW"/>
-                                <include reference="Rj3-14-ayU"/>
-                                <include reference="Eva-cc-DFN"/>
                                 <include reference="Xpc-Pu-aZs"/>
                                 <include reference="kRf-tJ-8SR"/>
                                 <include reference="3yy-9d-Rt2"/>
                                 <include reference="IYJ-eJ-gUh"/>
+                                <include reference="7Za-FX-VJW"/>
+                                <include reference="Rj3-14-ayU"/>
+                                <include reference="Eva-cc-DFN"/>
                                 <include reference="IhA-ap-8gJ"/>
                                 <include reference="woR-LZ-n3k"/>
+                                <include reference="9ho-c3-rkE"/>
+                                <include reference="HjK-wf-I9m"/>
+                                <include reference="nej-U2-pR9"/>
                             </mask>
                         </variation>
                     </view>
@@ -269,6 +262,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ORt-dK-Ngd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1gV-rU-Kdd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="igV-ms-Ek2">
@@ -288,10 +282,10 @@
                                 <exclude reference="igV-ms-Ek2"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KXn-Pw-ZLP"/>
                                 <exclude reference="Hos-4R-l4o"/>
                                 <exclude reference="YAD-o7-zjo"/>
                                 <exclude reference="dQq-iu-93Y"/>
-                                <exclude reference="KXn-Pw-ZLP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -299,14 +293,20 @@
                                 <include reference="igV-ms-Ek2"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KXn-Pw-ZLP"/>
                                 <include reference="Hos-4R-l4o"/>
                                 <include reference="YAD-o7-zjo"/>
                                 <include reference="dQq-iu-93Y"/>
-                                <include reference="KXn-Pw-ZLP"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="7kS-I3-Yrb"/>
+                    <navigationItem key="navigationItem" id="7kS-I3-Yrb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="T66-87-pU0">
+                            <connections>
+                                <action selector="addBarButtonClick:" destination="iPo-7R-b3x" id="H9Z-vN-Nk5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="igV-ms-Ek2" id="vR4-pw-1yp"/>
                     </connections>

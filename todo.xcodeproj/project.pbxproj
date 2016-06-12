@@ -20,6 +20,8 @@
 		3D65BF791D0C0CE500813255 /* PATodoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF781D0C0CE500813255 /* PATodoListViewController.m */; };
 		3D65BF7D1D0C178200813255 /* PADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D65BF7B1D0C178200813255 /* PADetailViewController.m */; };
 		3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D65BF7C1D0C178200813255 /* PADetailViewController.xib */; };
+		3D8D7B891D0D17D70002F08F /* PAComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D7B871D0D17D70002F08F /* PAComposerViewController.m */; };
+		3D8D7B8A1D0D17D70002F08F /* PAComposerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D7B881D0D17D70002F08F /* PAComposerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		3D65BF7A1D0C178200813255 /* PADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADetailViewController.h; sourceTree = "<group>"; };
 		3D65BF7B1D0C178200813255 /* PADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADetailViewController.m; sourceTree = "<group>"; };
 		3D65BF7C1D0C178200813255 /* PADetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PADetailViewController.xib; sourceTree = "<group>"; };
+		3D8D7B861D0D17D70002F08F /* PAComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAComposerViewController.h; sourceTree = "<group>"; };
+		3D8D7B871D0D17D70002F08F /* PAComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAComposerViewController.m; sourceTree = "<group>"; };
+		3D8D7B881D0D17D70002F08F /* PAComposerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAComposerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,9 @@
 				3D65BF7A1D0C178200813255 /* PADetailViewController.h */,
 				3D65BF7B1D0C178200813255 /* PADetailViewController.m */,
 				3D65BF7C1D0C178200813255 /* PADetailViewController.xib */,
+				3D8D7B861D0D17D70002F08F /* PAComposerViewController.h */,
+				3D8D7B871D0D17D70002F08F /* PAComposerViewController.m */,
+				3D8D7B881D0D17D70002F08F /* PAComposerViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 			files = (
 				3D65BF4D1D0BC7C700813255 /* LaunchScreen.storyboard in Resources */,
 				3D65BF4A1D0BC7C700813255 /* Assets.xcassets in Resources */,
+				3D8D7B8A1D0D17D70002F08F /* PAComposerViewController.xib in Resources */,
 				3D65BF7E1D0C178200813255 /* PADetailViewController.xib in Resources */,
 				3D65BF481D0BC7C700813255 /* Main.storyboard in Resources */,
 			);
@@ -313,6 +322,7 @@
 				3D65BF7D1D0C178200813255 /* PADetailViewController.m in Sources */,
 				3D65BF731D0BFEBA00813255 /* PATodo.m in Sources */,
 				3D65BF3F1D0BC7C700813255 /* main.m in Sources */,
+				3D8D7B891D0D17D70002F08F /* PAComposerViewController.m in Sources */,
 				3D65BF791D0C0CE500813255 /* PATodoListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +382,7 @@
 		3D65BF651D0BC7C800813255 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -416,7 +426,7 @@
 		3D65BF661D0BC7C800813255 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -538,6 +548,7 @@
 				3D65BF691D0BC7C800813255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D65BF6A1D0BC7C800813255 /* Build configuration list for PBXNativeTarget "todoTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +557,7 @@
 				3D65BF6C1D0BC7C800813255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D65BF6D1D0BC7C800813255 /* Build configuration list for PBXNativeTarget "todoUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +566,7 @@
 				3D65BF6F1D0BC7C800813255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

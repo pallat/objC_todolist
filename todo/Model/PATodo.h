@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface PATodo : NSObject
+
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, assign, readonly, getter=isDone) BOOL done;
-    - (instancetype) initWithTitle: (NSString *) title;
+- (instancetype) initWithTitle: (NSString *) title;
 - (void) toggleDone;
+
 @end

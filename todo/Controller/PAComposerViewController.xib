@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PAComposerViewController">
+            <connections>
+                <outlet property="createButton" destination="M10-8I-NEd" id="wAZ-dD-Zq9"/>
+                <outlet property="titleText" destination="DsL-sc-Far" id="1eW-h8-JUk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-sc-Far">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M10-8I-NEd">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Create New Todo"/>
+                    <connections>
+                        <action selector="createButtonClick:" destination="-1" eventType="touchUpInside" id="xzk-9m-tmj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DsL-sc-Far" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nd0-G6-Kch"/>
+                <constraint firstItem="DsL-sc-Far" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="d5j-Pn-kfd"/>
+                <constraint firstAttribute="trailing" secondItem="DsL-sc-Far" secondAttribute="trailing" constant="19" id="l23-ia-oLE"/>
+                <constraint firstItem="M10-8I-NEd" firstAttribute="top" secondItem="DsL-sc-Far" secondAttribute="bottom" constant="8" id="n45-uc-Mb6"/>
+                <constraint firstItem="M10-8I-NEd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="reX-yS-pMo"/>
+                <constraint firstItem="DsL-sc-Far" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="wcx-FJ-mdr"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="DsL-sc-Far"/>
+                    <exclude reference="M10-8I-NEd"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Nd0-G6-Kch"/>
+                    <exclude reference="d5j-Pn-kfd"/>
+                    <exclude reference="l23-ia-oLE"/>
+                    <exclude reference="wcx-FJ-mdr"/>
+                    <exclude reference="n45-uc-Mb6"/>
+                    <exclude reference="reX-yS-pMo"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="DsL-sc-Far"/>
+                    <include reference="M10-8I-NEd"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Nd0-G6-Kch"/>
+                    <include reference="d5j-Pn-kfd"/>
+                    <include reference="l23-ia-oLE"/>
+                    <include reference="wcx-FJ-mdr"/>
+                    <include reference="n45-uc-Mb6"/>
+                    <include reference="reX-yS-pMo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

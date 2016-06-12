@@ -9,14 +9,16 @@
 // Controller
 #import "PATodoListViewController.h"
 #import "PADetailViewController.h"
+#import "PAComposerViewController.h"
 
 // Model
 #import "PATodo.h"
 
-@interface PATodoListViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface PATodoListViewController () <UITableViewDataSource, UITableViewDelegate, PAComposerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *todoList;
+- (IBAction)addBarButtonClick:(id)sender;
 
 @end
 
@@ -24,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"Todo List";
     
     // Setup Data
     self.todoList = [[NSMutableArray alloc] init];
@@ -51,7 +55,6 @@
 }
 
 #pragma mark - UITableViewDatasource
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.todoList count];
@@ -92,10 +95,24 @@
     detailVC.todo = todo;
     
     [self.navigationController pushViewController:detailVC animated:YES];
-    detailVC.title = @"Detail";
-    
-
 }
 
+
+- (IBAction)addBarButtonClick:(id)sender {
+    PAComposerViewController *composerVC = [[PAComposerViewController alloc] initWithNibName:@"PAComposerViewController" bundle:nil];
+    
+    composerVC.delegate = self;
+    
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:composerVC];
+    
+    [self presentViewController: navC animated: YES completion:nil];
+}
+
+#pragma mark - PAComposerDelegate
+- (void)composer:(PAComposerViewController *)composerVC didCreateTodo:(PATodo *)todo {
+    [self.todoList addObject:todo];
+    [self.tableView reloadData];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

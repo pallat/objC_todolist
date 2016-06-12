@@ -1,28 +1,27 @@
 //
-//  PADetailViewController.m
+//  PAComposerViewController.m
 //  todo
 //
-//  Created by Cadet on 6/11/2559 BE.
+//  Created by Cadet on 6/12/2559 BE.
 //  Copyright © 2559 Cadet. All rights reserved.
 //
 
-#import "PADetailViewController.h"
+#import "PAComposerViewController.h"
 #import "PATodo.h"
 
-@interface PADetailViewController ()
-
+@interface PAComposerViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *titleText;
+@property (weak, nonatomic) IBOutlet UIButton *createButton;
 
 @end
 
-@implementation PADetailViewController
+@implementation PAComposerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Create";
+    [self.titleText becomeFirstResponder];
     // Do any additional setup after loading the view from its nib.
-    
-    self.title = @"Action";
-    self.titleLabel.text = self.todo.title;
-    self.toggleSwitch.on = self.todo.isDone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,8 +38,11 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)switchValue:(id)sender {
-    [self.todo toggleDone];
+- (IBAction)createButtonClick:(id)sender {
+    PATodo *todo = [[PATodo alloc] initWithTitle:self.titleText.text];
+
+    [self.delegate composer:self didCreateTodo:todo];
+    
 }
 
 @end
